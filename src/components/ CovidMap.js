@@ -32,9 +32,6 @@ const buildMapData = (data, casesType = "cases") =>
         fillColor: casesTypeColors[casesType].color,
         fillOpacity: 0.4,
       }}
-      // color={casesTypeColors[casesType].hex}
-      // fillColor={casesTypeColors[casesType].hex}
-      // fillOpacity={0.4}
       radius={
         Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
       }
@@ -70,7 +67,7 @@ export default function CovidMap({ center, zoom, mapData, casesType }) {
         url="https://api.maptiler.com/maps/basic/256/{z}/{x}/{y}.png?key=MnIgzFWylZtVv45BYBLW"
         attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
       ></TileLayer>
-      {console.log(casesTypeColors[casesType].hex)}
+
       {buildMapData(mapData, casesType)}
     </BasicMap>
   );

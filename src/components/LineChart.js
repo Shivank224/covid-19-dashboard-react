@@ -95,8 +95,11 @@ export default function LineChart({ casesType }) {
           data={{
             datasets: [
               {
-                backgroundColor: (casesType==="recovered"?"rgba(0,128,0,0.5)":"rgba(204, 16, 52, 0.5)"),
-                borderColor: (casesType==="recovered"? "green":"red"),
+                backgroundColor:
+                  casesType === "recovered"
+                    ? "rgba(0,128,0,0.5)"
+                    : "rgba(204, 16, 52, 0.5)",
+                borderColor: casesType === "recovered" ? "green" : "red",
                 data: data,
               },
             ],
