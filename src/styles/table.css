@@ -1,0 +1,30 @@
+.table {
+  margin-top: 0.5em;
+  overflow: scroll;
+  height: 400px;
+}
+
+.table tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table td {
+  padding: 0.5rem;
+  border: none;
+}
+
+tbody tr:nth-child(odd) {
+  padding-left: 0;
+  background: #e8f0f3e3;
+}
+.live {
+  color: rgb(120, 221, 18);
+}
+.chart {
+  padding: 0.5em;
+}
+.table_header{
+padding-left: 1em;
+
+}

@@ -1,0 +1,21 @@
+.infoCard {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width:auto;
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  text-align: center;
+}
+.infoCard:hover{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4); 
+}
+
+.infoBox--selected {
+  border-top: 10px solid green;
+}
+
+.infoBox--red {
+  border-color: red;
+}
