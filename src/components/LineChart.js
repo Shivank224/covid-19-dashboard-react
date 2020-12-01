@@ -11,7 +11,7 @@ const options = {
       radius: 4,
     },
   },
-  maintainAspectRatio: false,
+  maintainAspectRatio: true,
   tooltips: {
     mode: "index",
     intersect: false,
